@@ -28,7 +28,7 @@ shell.
     git clone https://github.com/asimjalis/cljs_hello.git
 
     # Compile it.
-    lein cljsbuild once
+    lein cljsbuild once prod
 
     # Start incognito browser.
     ( sleep 20 ; \
@@ -53,6 +53,30 @@ should pop an alert box on your web page.
 
 Congratulations! You can now begin live coding against the browser
 in your ClojureScript REPL.
+
+
+## Dev Workflow
+
+To develop the code, compile using `lein cljsbuild once dev` (note
+`dev` instead of `prod`). Follow the steps as listed above. Except in
+a different window run `lein cljsbuild auto dev`. This will recompile
+the ClojureScript files every time you edit them. Here is the
+workflow.
+
+- Try things out in the REPL.
+
+- Paste them into the ClojureScript file.
+
+- Lein will automatically pick up your changes and recompile the
+  JavaScript file.
+
+- Pick up the new JavaScript file by refreshing your incognito browser
+  window.
+
+Why are we using an incognito window?
+
+- This is to get around socket breaking behavior caused by caching in
+  a non-incognito window.
 
 ## License
 

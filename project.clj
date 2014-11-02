@@ -8,9 +8,14 @@
     [com.cemerick/clojurescript.test "0.3.1"] ]
   :hooks [leiningen.cljsbuild]
   :cljsbuild {
-    :builds [{
-        :source-paths ["."]
-        :compiler {
-          :output-to "cljs_hello.js"
-          :optimizations :whitespace
-          :pretty-print true}}]})
+    :builds {
+      :dev
+      {:source-paths ["."]
+       :compiler {:output-to "cljs_hello.js"
+                  :optimizations :whitespace
+                  :pretty-print true}}
+      :prod
+      {:source-paths ["."]
+       :compiler {:output-to "cljs_hello.js"
+                  :optimizations :advanced
+                  :pretty-print false}}}})
