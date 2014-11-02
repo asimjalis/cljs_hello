@@ -1,0 +1,22 @@
+<html>
+<head>
+<title>Hello</title>
+<style>
+  body { font-family: "Courier" }
+  input[type="number"] { width: 50px; }
+</style>
+</head>
+<body>
+<!-- FORM -->
+<form>
+  <h1>Hello</h1>
+  <div id="output"></div>
+  <input type="button" onClick="cljs_hello.main();return false" value="Test">
+</form>
+<!-- SCRIPTS -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<!-- <script type="text/javascript" src="out/goog/base.js"></script> -->
+<script type="text/javascript" src="cljs_hello.js"></script>
+<script type="text/javascript"> goog.require('cljs_hello'); </script>
+</body>
+</html>
