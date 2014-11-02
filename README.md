@@ -2,7 +2,7 @@
 
 ClojureScript hello world project with browser REPL.
 
-# Goals
+## Goals
 
 The goals of this project are:
 
@@ -11,7 +11,7 @@ The goals of this project are:
 - Have minimal dependencies (no dependencies on `ring` for example)
 - Set up a browser REPL so that you can experience live code editing
 
-# Steps
+## Steps
 
 To get this project up and running on your machine, follow these
 steps. You should be to copy and paste this directly into your
@@ -60,7 +60,7 @@ Copyright (c) 2014 Asim Jalis
 
 [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0.html).
 
-# Author
+## Author
 
 Asim Jalis    
 [email](mailto:asimjalis@gmail.com)    
