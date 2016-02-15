@@ -23,12 +23,13 @@ shell.
     chmod 755 lein
 
     # Grab this project.
-    mkdir -p $HOME/git/cljs_hello
-    cd $HOME/git/cljs_hello
+    mkdir -p $HOME/git
+    cd $HOME/git
     git clone https://github.com/asimjalis/cljs_hello.git
+    cd cljs_hello
 
     # Compile it.
-    lein cljsbuild once prod
+    lein cljsbuild once dev
 
     # Start incognito browser.
     ( sleep 20 ; \
